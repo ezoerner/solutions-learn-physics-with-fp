@@ -7,6 +7,46 @@
 @package learn-physics
 @version 0.1.0.0
 
+
+-- | <h1>Exercise 1.1.</h1>
+--   
+--   <i>Evaluate sin 30 in GHCi. Why is it not equal to 0.5?</i>
+--   
+--   <pre>
+--   &gt;&gt;&gt; sin 30
+--   -0.9880316240928618
+--   </pre>
+--   
+--   Because <a>sin</a> expects the angle in radians.
+--   
+--   <pre>
+--   &gt;&gt;&gt; sin (30/180 * pi)
+--   0.49999999999999994
+--   </pre>
+--   
+--   <h1>Exercise 1.2.</h1>
+--   
+--   <i>Add parentheses to the following expressions to indicate the order
+--   in which Haskell’s precedence and associativity rules would evaluate
+--   the expressions:</i>
+--   
+--   <pre>
+--   (a) 2 ^ 3 ^ 4
+--   (b) 2 / 3 / 4
+--   (c) 7 - 5 / 4
+--   (d) log 49 / 7
+--   </pre>
+--   
+--   <b>Solutions:</b>
+--   
+--   <pre>
+--   (a) 2 ^ (3 ^ 4)
+--   (b) (2 / 3) / 4
+--   (c) 7 - (5 / 4)
+--   (d) (log 49) / 7
+--   </pre>
+module Chapter01
+
 module Chapter02
 f :: Floating a => a -> a
 stdGravityMPS2 :: Double

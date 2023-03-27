@@ -24,6 +24,7 @@ source-repository head
 
 library
   exposed-modules:
+      Chapter01
       Chapter02
       Chapter03
       Chapter04
