@@ -2,7 +2,8 @@
 </code></strong>-0.9880316240928618
 </pre><p>Because <code><a href="../base-4.16.4.0/Numeric.html#v:sin" title="Numeric">sin</a></code> expects the angle in radians.</p><pre class="screen"><code class="prompt">&gt;&gt;&gt; </code><strong class="userinput"><code>sin (30/180 * pi)
 </code></strong>0.49999999999999994
-</pre><h1>Exercise 1.2.</h1><p><em>Add parentheses to the following expressions to indicate the order in which Haskell&#8217;s precedence and associativity rules would evaluate the expressions:</em></p><pre>  (a) 2 ^ 3 ^ 4
+</pre><h1>Exercise 1.2.</h1><p>/Add parentheses to the following expressions to indicate the order in which
+Haskell&#8217;s precedence and associativity rules would evaluate the expressions:/</p><pre>  (a) 2 ^ 3 ^ 4
   (b) 2 / 3 / 4
   (c) 7 - 5 / 4
   (d) log 49 / 7
@@ -10,4 +11,16 @@
   (b) (2 / 3) / 4
   (c) 7 - (5 / 4)
   (d) (log 49) / 7
-</pre></div></div><div id="interface"></div></div><div id="footer"><p>Produced by <a href="http://www.haskell.org/haddock/">Haddock</a> version 2.26.0</p></div></body></html>
+</pre><h1>Exercise 1.3.</h1><p><em>Use GHCi to find <code>log&#8322; 32.</code></em></p><pre class="screen"><code class="prompt">&gt;&gt;&gt; </code><strong class="userinput"><code>logBase 2 32
+</code></strong>5.0
+</pre><h1>Exercise 1.4.</h1><p><em>Use the <code>atan2</code> function in GHCi to find the polar coordinates (r,&#952;) associated with Cartesian coordinates (x, y) = (&#8211;3,4).</em></p><pre class="screen"><code class="prompt">&gt;&gt;&gt; </code><strong class="userinput"><code>theta = atan2 4 (-3)
+</code></strong><code class="prompt">&gt;&gt;&gt; </code><strong class="userinput"><code>x = -3
+</code></strong><code class="prompt">&gt;&gt;&gt; </code><strong class="userinput"><code>y = 4
+</code></strong><code class="prompt">&gt;&gt;&gt; </code><strong class="userinput"><code>theta = atan2 y x
+</code></strong><code class="prompt">&gt;&gt;&gt; </code><strong class="userinput"><code>r = sqrt (x**2 + y**2)
+</code></strong><code class="prompt">&gt;&gt;&gt; </code><strong class="userinput"><code>(r, theta)
+</code></strong>(5.0,2.214297435588181)
+</pre><h1>Exercise 1.5.</h1><p><em>Find a new example of a calculation in which the computer produces a result that is just a little bit different from the exact result.</em></p><pre class="screen"><code class="prompt">&gt;&gt;&gt; </code><strong class="userinput"><code>3 ** (logBase 3 10)
+</code></strong>10.000000000000002
+</pre><h1>Exercise 1.6.</h1><p><em>Why is there no associativity listed for the equality, inequality, and comparison operators in Table 1-2? (Hint: write down the simplest expression you can think of that would require the associativity rules to resolve the precedence of comparison operators and try to make sense of it.)</em></p><pre>3 &lt; 4 &lt; 5</pre><p>Because comparison, equality, and inequality operators evaluate to Boolean
+values which cannot be further operated on with these same operators.</p></div></div><div id="interface"></div></div><div id="footer"><p>Produced by <a href="http://www.haskell.org/haddock/">Haddock</a> version 2.26.0</p></div></body></html>
