@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><link rel="stylesheet" type="text/css" href="style.css" /><script type="text/javascript" src="highlight.js"></script></head><body><pre><span class="hs-keyword">module</span><span> </span><span class="hs-identifier">Chapter03</span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-2"></span><span>
+</span><span id="line-3"></span><span class="hs-comment">---------------</span><span>
+</span><span id="line-4"></span><span class="hs-comment">-- Exercise 3.2</span><span>
+</span><span id="line-5"></span><span class="hs-comment">---------------</span><span>
+</span><span id="line-6"></span><span class="annot"><a href="Chapter03.html#f"><span class="hs-identifier hs-type">f</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Double</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Double</span></span><span>
+</span><span id="line-7"></span><span id="f"><span class="annot"><span class="annottext">f :: Double -&gt; Double
+</span><a href="Chapter03.html#f"><span class="hs-identifier hs-var hs-var">f</span></a></span></span><span> </span><span id="local-6989586621679038700"><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679038700"><span class="hs-identifier hs-var">x</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
+</span><span id="line-8"></span><span>  </span><span class="hs-keyword">if</span><span> </span><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679038700"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">forall a. Ord a =&gt; a -&gt; a -&gt; Bool
+</span><span class="hs-operator hs-var">&lt;=</span></span><span> </span><span class="annot"><span class="annottext">Double
+</span><span class="hs-number">0</span></span><span>
+</span><span id="line-9"></span><span>    </span><span class="hs-keyword">then</span><span> </span><span class="annot"><span class="annottext">Double
+</span><span class="hs-number">0</span></span><span>
+</span><span id="line-10"></span><span>    </span><span class="hs-keyword">else</span><span> </span><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679038700"><span class="hs-identifier hs-var">x</span></a></span><span>
+</span><span id="line-11"></span><span>
+</span><span id="line-12"></span><span class="annot"><a href="Chapter03.html#e"><span class="hs-identifier hs-type">e</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Double</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Double</span></span><span>
+</span><span id="line-13"></span><span id="e"><span class="annot"><span class="annottext">e :: Double -&gt; Double
+</span><a href="Chapter03.html#e"><span class="hs-identifier hs-var hs-var">e</span></a></span></span><span> </span><span id="local-6989586621679038697"><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679038697"><span class="hs-identifier hs-var">r</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
+</span><span id="line-14"></span><span>  </span><span class="hs-keyword">if</span><span> </span><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679038697"><span class="hs-identifier hs-var">r</span></a></span><span> </span><span class="annot"><span class="annottext">forall a. Ord a =&gt; a -&gt; a -&gt; Bool
+</span><span class="hs-operator hs-var">&lt;=</span></span><span> </span><span class="annot"><span class="annottext">Double
+</span><span class="hs-number">1</span></span><span>
+</span><span id="line-15"></span><span>    </span><span class="hs-keyword">then</span><span> </span><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679038697"><span class="hs-identifier hs-var">r</span></a></span><span>
+</span><span id="line-16"></span><span>    </span><span class="hs-keyword">else</span><span> </span><span class="annot"><span class="annottext">Double
+</span><span class="hs-number">1</span></span><span> </span><span class="annot"><span class="annottext">forall a. Fractional a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">/</span></span><span> </span><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679038697"><span class="hs-identifier hs-var">r</span></a></span><span> </span><span class="annot"><span class="annottext">forall a. Floating a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">**</span></span><span> </span><span class="annot"><span class="annottext">Double
+</span><span class="hs-number">2</span></span><span>
+</span><span id="line-17"></span><span>
+</span><span id="line-18"></span><span class="hs-comment">---------------</span><span>
+</span><span id="line-19"></span><span class="hs-comment">-- Exercise 3.3</span><span>
+</span><span id="line-20"></span><span class="hs-comment">---------------</span><span>
+</span><span id="line-21"></span><span class="annot"><a href="Chapter03.html#isXorY"><span class="hs-identifier hs-type">isXorY</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Char</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Bool</span></span><span>
+</span><span id="line-22"></span><span id="isXorY"><span class="annot"><span class="annottext">isXorY :: Char -&gt; Bool
+</span><a href="Chapter03.html#isXorY"><span class="hs-identifier hs-var hs-var">isXorY</span></a></span></span><span> </span><span class="annot"><span class="annottext">Char
+</span><span class="hs-char">'X'</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Bool
+</span><span class="hs-identifier hs-var">True</span></span><span>
+</span><span id="line-23"></span><span class="annot"><a href="Chapter03.html#isXorY"><span class="hs-identifier hs-var">isXorY</span></a></span><span> </span><span class="annot"><span class="annottext">Char
+</span><span class="hs-char">'Y'</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Bool
+</span><span class="hs-identifier hs-var">True</span></span><span>
+</span><span id="line-24"></span><span class="annot"><a href="Chapter03.html#isXorY"><span class="hs-identifier hs-var">isXorY</span></a></span><span> </span><span class="annot"><span class="annottext">Char
+</span><span class="hs-identifier">_</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Bool
+</span><span class="hs-identifier hs-var">False</span></span><span>
+</span><span id="line-25"></span><span>
+</span><span id="line-26"></span><span class="hs-comment">---------------</span><span>
+</span><span id="line-27"></span><span class="hs-comment">-- Exercise 3.4</span><span>
+</span><span id="line-28"></span><span class="hs-comment">---------------</span><span>
+</span><span id="line-29"></span><span class="annot"><a href="Chapter03.html#bagFee"><span class="hs-identifier hs-type">bagFee</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Bool</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span>
+</span><span id="line-30"></span><span id="bagFee"><span class="annot"><span class="annottext">bagFee :: Bool -&gt; Int
+</span><a href="Chapter03.html#bagFee"><span class="hs-identifier hs-var hs-var">bagFee</span></a></span></span><span> </span><span id="local-6989586621679038692"><span class="annot"><span class="annottext">Bool
+</span><a href="#local-6989586621679038692"><span class="hs-identifier hs-var">isCheckingBags</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">if</span><span> </span><span class="annot"><span class="annottext">Bool
+</span><a href="#local-6989586621679038692"><span class="hs-identifier hs-var">isCheckingBags</span></a></span><span> </span><span class="hs-keyword">then</span><span> </span><span class="annot"><span class="annottext">Int
+</span><span class="hs-number">100</span></span><span> </span><span class="hs-keyword">else</span><span> </span><span class="annot"><span class="annottext">Int
+</span><span class="hs-number">0</span></span><span>
+</span><span id="line-31"></span><span>
+</span><span id="line-32"></span><span class="annot"><a href="Chapter03.html#bagFee2"><span class="hs-identifier hs-type">bagFee2</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Bool</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span>
+</span><span id="line-33"></span><span id="bagFee2"><span class="annot"><span class="annottext">bagFee2 :: Bool -&gt; Int
+</span><a href="Chapter03.html#bagFee2"><span class="hs-identifier hs-var hs-var">bagFee2</span></a></span></span><span> </span><span class="annot"><span class="annottext">Bool
+</span><span class="hs-identifier hs-var">True</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int
+</span><span class="hs-number">100</span></span><span>
+</span><span id="line-34"></span><span class="annot"><a href="Chapter03.html#bagFee2"><span class="hs-identifier hs-var">bagFee2</span></a></span><span> </span><span class="annot"><span class="annottext">Bool
+</span><span class="hs-identifier">_</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int
+</span><span class="hs-number">0</span></span><span>
+</span><span id="line-35"></span><span>
+</span><span id="line-36"></span><span class="hs-comment">---------------</span><span>
+</span><span id="line-37"></span><span class="hs-comment">-- Exercise 3.5</span><span>
+</span><span id="line-38"></span><span class="hs-comment">---------------</span><span>
+</span><span id="line-39"></span><span class="annot"><a href="Chapter03.html#greaterThan50"><span class="hs-identifier hs-type">greaterThan50</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Integer</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Bool</span></span><span>
+</span><span id="line-40"></span><span id="greaterThan50"><span class="annot"><span class="annottext">greaterThan50 :: Integer -&gt; Bool
+</span><a href="Chapter03.html#greaterThan50"><span class="hs-identifier hs-var hs-var">greaterThan50</span></a></span></span><span> </span><span id="local-6989586621679038689"><span class="annot"><span class="annottext">Integer
+</span><a href="#local-6989586621679038689"><span class="hs-identifier hs-var">n</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Integer
+</span><a href="#local-6989586621679038689"><span class="hs-identifier hs-var">n</span></a></span><span> </span><span class="annot"><span class="annottext">forall a. Ord a =&gt; a -&gt; a -&gt; Bool
+</span><span class="hs-operator hs-var">&gt;</span></span><span> </span><span class="annot"><span class="annottext">Integer
+</span><span class="hs-number">50</span></span><span>
+</span><span id="line-41"></span><span>
+</span><span id="line-42"></span><span class="hs-comment">---------------</span><span>
+</span><span id="line-43"></span><span class="hs-comment">-- Exercise 3.6</span><span>
+</span><span id="line-44"></span><span class="hs-comment">---------------</span><span>
+</span><span id="line-45"></span><span class="annot"><a href="Chapter03.html#amazingCurve"><span class="hs-identifier hs-type">amazingCurve</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span>
+</span><span id="line-46"></span><span id="amazingCurve"><span class="annot"><span class="annottext">amazingCurve :: Int -&gt; Int
+</span><a href="Chapter03.html#amazingCurve"><span class="hs-identifier hs-var hs-var">amazingCurve</span></a></span></span><span> </span><span id="local-6989586621679038686"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679038686"><span class="hs-identifier hs-var">score</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">forall a. Ord a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-identifier hs-var">min</span></span><span> </span><span class="annot"><span class="annottext">Int
+</span><span class="hs-number">100</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679038686"><span class="hs-identifier hs-var">score</span></a></span><span> </span><span class="annot"><span class="annottext">forall a b. (Num a, Integral b) =&gt; a -&gt; b -&gt; a
+</span><span class="hs-operator hs-var">^</span></span><span> </span><span class="annot"><span class="annottext">Integer
+</span><span class="hs-number">2</span></span><span class="hs-special">)</span><span>
+</span><span id="line-47"></span><span>
+</span><span id="line-48"></span><span class="hs-comment">---------------</span><span>
+</span><span id="line-49"></span><span class="hs-comment">-- Exercise 3.8</span><span>
+</span><span id="line-50"></span><span class="hs-comment">---------------</span><span>
+</span><span id="line-51"></span><span class="annot"><a href="Chapter03.html#circleRadius"><span class="hs-identifier hs-type">circleRadius</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Double</span></span><span>
+</span><span id="line-52"></span><span id="circleRadius"><span class="annot"><span class="annottext">circleRadius :: Double
+</span><a href="Chapter03.html#circleRadius"><span class="hs-identifier hs-var hs-var">circleRadius</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Double
+</span><span class="hs-number">3.5</span></span><span>
+</span><span id="line-53"></span><span>
+</span><span id="line-54"></span><span class="annot"><a href="Chapter03.html#cot"><span class="hs-identifier hs-type">cot</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Double</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Double</span></span><span>
+</span><span id="line-55"></span><span id="cot"><span class="annot"><span class="annottext">cot :: Double -&gt; Double
+</span><a href="Chapter03.html#cot"><span class="hs-identifier hs-var hs-var">cot</span></a></span></span><span> </span><span id="local-6989586621679038681"><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679038681"><span class="hs-identifier hs-var">x</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Double
+</span><span class="hs-number">1</span></span><span> </span><span class="annot"><span class="annottext">forall a. Fractional a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">/</span></span><span> </span><span class="annot"><span class="annottext">forall a. Floating a =&gt; a -&gt; a
+</span><span class="hs-identifier hs-var">tan</span></span><span> </span><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679038681"><span class="hs-identifier hs-var">x</span></a></span><span>
+</span><span id="line-56"></span><span>
+</span><span id="line-57"></span><span class="annot"><a href="Chapter03.html#fe"><span class="hs-identifier hs-type">fe</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Double</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Double</span></span><span>
+</span><span id="line-58"></span><span id="fe"><span class="annot"><span class="annottext">fe :: Double -&gt; Double
+</span><a href="Chapter03.html#fe"><span class="hs-identifier hs-var hs-var">fe</span></a></span></span><span> </span><span id="local-6989586621679038678"><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679038678"><span class="hs-identifier hs-var">epsilon</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679038678"><span class="hs-identifier hs-var">epsilon</span></a></span><span> </span><span class="annot"><span class="annottext">forall a. Num a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">*</span></span><span> </span><span class="annot"><span class="annottext">forall a. Floating a =&gt; a -&gt; a
+</span><span class="hs-identifier hs-var">tan</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679038678"><span class="hs-identifier hs-var">epsilon</span></a></span><span> </span><span class="annot"><span class="annottext">forall a. Num a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">*</span></span><span> </span><span class="annot"><span class="annottext">forall a. Floating a =&gt; a
+</span><span class="hs-identifier hs-var">pi</span></span><span> </span><span class="annot"><span class="annottext">forall a. Fractional a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">/</span></span><span> </span><span class="annot"><span class="annottext">Double
+</span><span class="hs-number">2</span></span><span class="hs-special">)</span><span>
+</span><span id="line-59"></span><span>
+</span><span id="line-60"></span><span class="annot"><a href="Chapter03.html#fo"><span class="hs-identifier hs-type">fo</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Double</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Double</span></span><span>
+</span><span id="line-61"></span><span id="fo"><span class="annot"><span class="annottext">fo :: Double -&gt; Double
+</span><a href="Chapter03.html#fo"><span class="hs-identifier hs-var hs-var">fo</span></a></span></span><span> </span><span id="local-6989586621679038674"><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679038674"><span class="hs-identifier hs-var">epsilon</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-glyph">-</span><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679038674"><span class="hs-identifier hs-var">epsilon</span></a></span><span> </span><span class="annot"><span class="annottext">forall a. Num a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">*</span></span><span> </span><span class="annot"><span class="annottext">Double -&gt; Double
+</span><a href="Chapter03.html#cot"><span class="hs-identifier hs-var">cot</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679038674"><span class="hs-identifier hs-var">epsilon</span></a></span><span> </span><span class="annot"><span class="annottext">forall a. Num a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">*</span></span><span> </span><span class="annot"><span class="annottext">forall a. Floating a =&gt; a
+</span><span class="hs-identifier hs-var">pi</span></span><span> </span><span class="annot"><span class="annottext">forall a. Fractional a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">/</span></span><span> </span><span class="annot"><span class="annottext">Double
+</span><span class="hs-number">2</span></span><span class="hs-special">)</span><span>
+</span><span id="line-62"></span><span>
+</span><span id="line-63"></span><span class="annot"><a href="Chapter03.html#g"><span class="hs-identifier hs-type">g</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Double</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Double</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Double</span></span><span>
+</span><span id="line-64"></span><span id="g"><span class="annot"><span class="annottext">g :: Double -&gt; Double -&gt; Double
+</span><a href="Chapter03.html#g"><span class="hs-identifier hs-var hs-var">g</span></a></span></span><span> </span><span id="local-6989586621679038672"><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679038672"><span class="hs-identifier hs-var">nu</span></a></span></span><span> </span><span id="local-6989586621679038671"><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679038671"><span class="hs-identifier hs-var">epsilon</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">forall a. Floating a =&gt; a -&gt; a
+</span><span class="hs-identifier hs-var">sqrt</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679038672"><span class="hs-identifier hs-var">nu</span></a></span><span> </span><span class="annot"><span class="annottext">forall a. Floating a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">**</span></span><span> </span><span class="annot"><span class="annottext">Double
+</span><span class="hs-number">2</span></span><span> </span><span class="annot"><span class="annottext">forall a. Num a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-glyph hs-var">-</span></span><span> </span><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679038671"><span class="hs-identifier hs-var">epsilon</span></a></span><span> </span><span class="annot"><span class="annottext">forall a. Floating a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">**</span></span><span> </span><span class="annot"><span class="annottext">Double
+</span><span class="hs-number">2</span></span><span class="hs-special">)</span><span>
+</span><span id="line-65"></span></pre></body></html>

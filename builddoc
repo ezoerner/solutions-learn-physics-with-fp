@@ -1,0 +1,1 @@
+stack build --haddock --no-haddock-deps --haddock-arguments "--hyperlinked-source -o docs"

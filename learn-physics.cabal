@@ -1,0 +1,66 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.35.1.
+--
+-- see: https://github.com/sol/hpack
+
+name:           learn-physics
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/ezoerner/solutions-learn-physics-with-fp#README.md>
+homepage:       https://github.com/ezoerner/solutions-learn-physics-with-fp#readme
+bug-reports:    https://github.com/ezoerner/solutions-learn-physics-with-fp/issues
+author:         Eric Zoerner
+maintainer:     eric.zoerner@proton.me
+copyright:      Copyright: (c) 2023 Eric Zoerner
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+
+source-repository head
+  type: git
+  location: https://github.com/ezoerner/solutions-learn-physics-with-fp
+
+library
+  exposed-modules:
+      Chapter02
+      Chapter03
+      Chapter04
+      Chapter05
+      Chapter06
+      Chapter07
+  other-modules:
+      Paths_learn_physics
+  hs-source-dirs:
+      src
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -Werror -Wno-type-defaults
+  build-depends:
+      base >=4.7 && <5
+    , gnuplot
+  default-language: GHC2021
+
+executable learn-physics-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_learn_physics
+  hs-source-dirs:
+      app
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -Werror -Wno-type-defaults -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , learn-physics
+  default-language: GHC2021
+
+test-suite learn-physics-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_learn_physics
+  hs-source-dirs:
+      test
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -Werror -Wno-type-defaults -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , learn-physics
+  default-language: GHC2021
