@@ -1,4 +1,4 @@
-name:                learn-physics
+name:                solutions-learn-physics-with-fp
 version:             0.1.0.0
 github:              "ezoerner/solutions-learn-physics-with-fp"
 license:             BSD3
@@ -50,7 +50,7 @@ executables:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - learn-physics
+    - solutions-learn-physics-with-fp
 
 tests:
   learn-physics-test:
@@ -61,4 +61,4 @@ tests:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - learn-physics
+    - solutions-learn-physics-with-fp
