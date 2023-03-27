@@ -1,4 +1,4 @@
-# learn-physics
+# solutions-learn-physics-with-fp
 
 Solutions to exercises in
 
