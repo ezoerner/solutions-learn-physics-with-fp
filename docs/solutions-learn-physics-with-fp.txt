@@ -90,18 +90,72 @@ bigEx :: Double -> Double
 --   </pre>
 bigEz :: Double -> Double
 
+
 module Chapter03
+
+-- | <pre>
+--   f(x) = { 0, x ≤ 0; x, x &gt; 0}
+--   </pre>
 f :: Double -> Double
+
+-- | <pre>
+--   E(r) = { r, r ≤ 1; 1/r², r &gt; 1}
+--   </pre>
 e :: Double -> Double
+
+-- | Return <a>True</a> if the input character is <tt>'X'</tt> or
+--   <tt>'Y'</tt> and return <a>False</a> otherwise.
+--   
+--   <pre>
+--   &gt;&gt;&gt; isXorY 'X'
+--   True
+--   
+--   &gt;&gt;&gt; isXorY 'Y'
+--   True
+--   
+--   &gt;&gt;&gt; isXorY 'Z'
+--   False
+--   </pre>
 isXorY :: Char -> Bool
+
+-- | Return <tt>100</tt> if the person is checking bags and <tt>0</tt> if
+--   not. Implemented with <tt>if-then-else</tt>.
 bagFee :: Bool -> Int
+
+-- | Return <tt>100</tt> if the person is checking bags and <tt>0</tt> if
+--   not. Implemented with pattern matching on the input.
 bagFee2 :: Bool -> Int
+
+-- | Return <a>True</a> if the given integer is greater than 50 and return
+--   <a>False</a> otherwise.
 greaterThan50 :: Integer -> Bool
+
+-- | Double the score without going over 100
 amazingCurve :: Int -> Int
+
+-- | <pre>
+--   circleRadius = 3.5
+--   </pre>
 circleRadius :: Double
+
+-- | <pre>
+--   cot x = 1 / tan x
+--   </pre>
 cot :: Double -> Double
+
+-- | <pre>
+--   fe epsilon = epsilon * tan (epsilon * pi / 2)
+--   </pre>
 fe :: Double -> Double
+
+-- | <pre>
+--   fo epsilon = -epsilon * cot (epsilon * pi / 2)
+--   </pre>
 fo :: Double -> Double
+
+-- | <pre>
+--   g nu epsilon = sqrt (nu ** 2 - epsilon ** 2)
+--   </pre>
 g :: Double -> Double -> Double
 
 module Chapter04

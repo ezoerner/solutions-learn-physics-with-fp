@@ -13,7 +13,9 @@
 
 module Chapter02 where
 
+------------------
 -- * Exercise 2.1
+------------------
 
 -- | @f(x) = √ (1 + x)@
 --
@@ -26,7 +28,9 @@ module Chapter02 where
 f :: Floating a => a -> a
 f x = sqrt (1 + x)
 
+------------------
 -- * Exercise 2.2.
+------------------
 
 -- | Standard Earth gravity acceleration at sea level in m/s².
 stdGravityMPS2 :: Double
@@ -38,7 +42,9 @@ stdGravityMPS2 = 9.80665
 yRock30 :: Double -> Double
 yRock30 t = 0.5 * (-stdGravityMPS2) * t ** 2 + 30 * t
 
+------------------
 -- * Exercise 2.3.
+------------------
 
 -- | Accepts as input the time (after the rock was thrown) in seconds and
 -- gives as output the upward velocity of the rock in meters per second.
@@ -46,7 +52,9 @@ yRock30 t = 0.5 * (-stdGravityMPS2) * t ** 2 + 30 * t
 vRock30 :: Double -> Double
 vRock30 t = 30 - stdGravityMPS2 * t
 
+------------------
 -- * Exercise 2.4.
+------------------
 
 -- | Computes the sine of an angle given in degrees.
 --
@@ -55,7 +63,9 @@ vRock30 t = 30 - stdGravityMPS2 * t
 sinDeg :: Double -> Double
 sinDeg deg = sin (deg * pi / 180)
 
+------------------
 -- * Exercise 2.5.
+------------------
 
 -- | @f(x) = ∛x@
 f' :: Double -> Double
@@ -89,13 +99,15 @@ bigEx x = 1 / abs x ** 3
 bigEz :: Double -> Double
 bigEz z = 1 / ((z ** 2 + 4) ** (3 / 2))
 
+------------------
 -- * Exercise 2.6.
--- $ex26
---
--- (a) @\b -> 1 / sqrt (1 - b ** 2)@
---
--- (b)
---
--- >>> (\b -> 1 / sqrt (1 - b ** 2)) 0.8
--- 1.666666666666667
+------------------
+{- $ex26
 
+__(a)__ @\b -> 1 / sqrt (1 - b ** 2)@
+
+__(b)__
+
+>>> (\b -> 1 / sqrt (1 - b ** 2)) 0.8
+1.666666666666667
+ -}

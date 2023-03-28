@@ -2,16 +2,11 @@
 </code></strong>-0.9880316240928618
 </pre><p><em>Because <code>sin</code> expects the angle in radians.</em></p><pre class="screen"><code class="prompt">&gt;&gt;&gt; </code><strong class="userinput"><code>sin (30/180 * pi)
 </code></strong>0.49999999999999994
-</pre></div><a href="#g:2" id="g:2"><h1>Exercise 1.2.</h1></a><div class="doc"><p>Add parentheses to the following expressions to indicate the order in which
-Haskell&#8217;s precedence and associativity rules would evaluate the expressions:</p><pre>  (a) 2 ^ 3 ^ 4
-  (b) 2 / 3 / 4
-  (c) 7 - 5 / 4
-  (d) log 49 / 7
-</pre><h3>Solutions:</h3><pre>  (a) 2 ^ (3 ^ 4)
-  (b) (2 / 3) / 4
-  (c) 7 - (5 / 4)
-  (d) (log 49) / 7
-</pre></div><a href="#g:3" id="g:3"><h1>Exercise 1.3.</h1></a><div class="doc"><p>Use GHCi to find <code>log&#8322; 32.</code></p><pre class="screen"><code class="prompt">&gt;&gt;&gt; </code><strong class="userinput"><code>logBase 2 32
+</pre></div><a href="#g:2" id="g:2"><h1>Exercise 1.2.</h1></a><div class="doc"><pre>  <strong>(a)</strong> 2 ^ (3 ^ 4)
+  <strong>(b)</strong> (2 / 3) / 4
+  <strong>(c)</strong> 7 - (5 / 4)
+  <strong>(d)</strong> (log 49) / 7
+</pre></div><a href="#g:3" id="g:3"><h1>Exercise 1.3.</h1></a><div class="doc"><pre class="screen"><code class="prompt">&gt;&gt;&gt; </code><strong class="userinput"><code>logBase 2 32
 </code></strong>5.0
 </pre></div><a href="#g:4" id="g:4"><h1>Exercise 1.4.</h1></a><div class="doc"><p>Use the <code>atan2</code> function in GHCi to find the polar coordinates <code>(r,&#952;)</code> associated
 with Cartesian coordinates <code>(x, y) = (&#8211;3,4)</code>.</p><pre class="screen"><code class="prompt">&gt;&gt;&gt; </code><strong class="userinput"><code>theta = atan2 4 (-3)
