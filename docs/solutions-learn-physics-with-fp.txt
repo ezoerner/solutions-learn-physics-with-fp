@@ -158,15 +158,43 @@ fo :: Double -> Double
 --   </pre>
 g :: Double -> Double -> Double
 
+
 module Chapter04
+
+-- | alias R to be a Double as an approximate of a real number
 type R = Double
+
+-- | A derivative is a function of a real to real that yields another
+--   function of real to real
 type Derivative = (R -> R) -> R -> R
+
+-- | Numerical derivation given a small delta
 derivative :: R -> Derivative
+
+-- | <pre>
+--   f(x) = ½x²
+--   </pre>
 f41 :: R -> R
+
+-- | <pre>
+--   f(x) = x³
+--   </pre>
 f42 :: R -> R
+
+-- | Derivative of <a>f42</a>, <tt>f(x) = 3x²</tt>.
 df42 :: R -> R
+
+-- | Error function: Returns the error between a numerical derivative
+--   estimate and the provided analytical derivative.
 errF :: (R -> R) -> (R -> R) -> R -> R -> R
+
+-- | Error function for <a>f42</a>.
 err42 :: R -> R -> R
+
+-- | Returns the error in terms of <tt>a</tt> (the "delta"). The expression
+--   for the error is apparantly <tt>a²/4</tt>. This formula was just
+--   determined empirically by putting a bunch of <tt>a</tt> values into
+--   <a>err42</a> and looking at the pattern of results.
 errA :: R -> R
 f44 :: R -> R
 df44 :: R -> R
