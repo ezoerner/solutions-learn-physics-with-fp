@@ -26,7 +26,7 @@ derivative dt x t = (x (t + dt / 2) - x (t - dt / 2)) / dt
 -- * Exercise 4.1
 ------------------
 -- $ex41
--- Why does @derivative 0.1@ not produce exactly the identity function on real numbers?
+-- __Why does @derivative 0.1@ not produce exactly the identity function on real numbers?__
 --
 -- /Because @0.1@ cannot be represented exactly in a Double./
 --

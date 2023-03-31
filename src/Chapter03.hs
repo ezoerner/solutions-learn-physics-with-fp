@@ -60,8 +60,8 @@ e r =
 
 -- * Exercise 3.3
 
--- | Return 'True' if the input character is @\'X\'@ or @\'Y\'@
--- and return 'False' otherwise.
+-- | Returns 'True' if the input character is @\'X\'@ or @\'Y\'@
+-- or else 'False'.
 --
 -- >>> isXorY 'X'
 -- True
@@ -78,12 +78,12 @@ isXorY _ = False
 -- * Exercise 3.4
 ------------------
 
--- | Return @100@ if the person is checking bags and @0@ if not.
+-- | Returns @100@ if the person is checking bags and @0@ if not.
 -- Implemented with @if-then-else@.
 bagFee :: Bool -> Int
 bagFee isCheckingBags = if isCheckingBags then 100 else 0
 
--- | Return @100@ if the person is checking bags and @0@ if not.
+-- | Returns @100@ if the person is checking bags and @0@ if not.
 -- Implemented with pattern matching on the input.
 bagFee2 :: Bool -> Int
 bagFee2 True = 100
@@ -93,8 +93,7 @@ bagFee2 _ = 0
 -- * Exercise 3.5
 ------------------
 
--- | Return 'True' if the given integer is greater than 50 and return 'False'
--- otherwise.
+-- | Returns 'True' if the given integer is greater than 50 or else 'False'
 greaterThan50 :: Integer -> Bool
 greaterThan50 n = n > 50
 
@@ -110,13 +109,8 @@ amazingCurve score = min 100 (score ^ 2)
 -- * Exercise 3.7
 ------------------
 {- $ex37
-What is the type of the expression @bagFee False@ using the definition of
-'bagFee' you wrote in Exercise 3.4?
-
 >>> :type bagFee False
 bagFee False :: Int
-
-What is the value of the expression @bagFee False@ using that definition of bagFee?
 
 >>> bagFee False
 0
@@ -125,9 +119,6 @@ What is the value of the expression @bagFee False@ using that definition of bagF
 ------------------
 -- * Exercise 3.8
 ------------------
-{- $ex38
-/Give every function a type signature./
--}
 
 -- | @circleRadius = 3.5@
 circleRadius :: Double
@@ -153,15 +144,15 @@ g nu epsilon = sqrt (nu ** 2 - epsilon ** 2)
 -- * Exercise 3.9
 ------------------
 {- $ex39
-There are only a finite number of functions with type @Bool -> Bool@. How many are there?
+__How many functions with type @Bool -> Bool@ are there?__
 
 /There are 4 @Bool -> Bool@ functions./
 
-What would be good names for them?
+__What would be good names for them?__
 
 /@alwaysFalse@, @alwaysTrue@, 'identity', and 'not'/
 
-How many functions have type @Bool -> Bool -> Bool@?
+__How many functions have type @Bool -> Bool -> Bool@?__
 
 /There are 16 @Bool -> Bool -> Bool@ functions./
 

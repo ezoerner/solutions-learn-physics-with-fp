@@ -68,8 +68,8 @@ sinDeg deg = sin (deg * pi / 180)
 ------------------
 
 -- | @f(x) = ∛x@
-f' :: Double -> Double
-f' x = x ** (1 / 3)
+f25 :: Double -> Double
+f25 x = x ** (1 / 3)
 
 -- | @g(ɣ) = e^ɣ+8^ɣ@
 g :: Double -> Double

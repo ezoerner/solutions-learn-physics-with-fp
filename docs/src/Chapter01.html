@@ -13,7 +13,7 @@ Maintainer  : eric.zoerner@proton.me
 </span><span id="line-13"></span><span class="hs-comment">-- * Exercise 1.1.</span><span>
 </span><span id="line-14"></span><span class="hs-comment">------------------</span><span>
 </span><span id="line-15"></span><span class="hs-comment">{- $ex11
-Evaluate @sin 30@ in GHCi. Why is it not equal to @0.5@?
+__Why is @sin 30@ not equal to @0.5@?__
 
 &gt;&gt;&gt; sin 30
 -0.9880316240928618
@@ -48,41 +48,37 @@ Evaluate @sin 30@ in GHCi. Why is it not equal to @0.5@?
 </span><span id="line-48"></span><span class="hs-comment">-- * Exercise 1.4.</span><span>
 </span><span id="line-49"></span><span class="hs-comment">------------------</span><span>
 </span><span id="line-50"></span><span class="hs-comment">{- $ex14
-Use the @atan2@ function in GHCi to find the polar coordinates @(r,&#952;)@ associated
-with Cartesian coordinates @(x, y) = (&#8211;3,4)@.
+__Calculate the polar coordinates @(r,&#952;)@ for Cartesian coordinates @(x, y) = (&#8211;3,4)@.__
 
 &gt;&gt;&gt; theta = atan2 4 (-3)
 &gt;&gt;&gt; x = -3
 &gt;&gt;&gt; y = 4
-&gt;&gt;&gt; theta = atan2 y x
+&gt;&gt;&gt; &#952; = atan2 y x
 &gt;&gt;&gt; r = sqrt (x**2 + y**2)
-&gt;&gt;&gt; (r, theta)
+&gt;&gt;&gt; (r, &#952;)
 (5.0,2.214297435588181)
 -}</span><span>
-</span><span id="line-62"></span><span>
-</span><span id="line-63"></span><span class="hs-comment">------------------</span><span>
-</span><span id="line-64"></span><span class="hs-comment">-- * Exercise 1.5.</span><span>
-</span><span id="line-65"></span><span class="hs-comment">------------------</span><span>
-</span><span id="line-66"></span><span class="hs-comment">{- $ex15
-Find a new example of a calculation in which the computer produces a result that
-is just a little bit different from the exact result.
+</span><span id="line-61"></span><span>
+</span><span id="line-62"></span><span class="hs-comment">------------------</span><span>
+</span><span id="line-63"></span><span class="hs-comment">-- * Exercise 1.5.</span><span>
+</span><span id="line-64"></span><span class="hs-comment">------------------</span><span>
+</span><span id="line-65"></span><span class="hs-comment">{- $ex15
+__Find a new example of a non-exact calculation result.__
 
 &gt;&gt;&gt; 3 ** (logBase 3 10)
 10.000000000000002
 -}</span><span>
-</span><span id="line-73"></span><span>
+</span><span id="line-71"></span><span>
+</span><span id="line-72"></span><span class="hs-comment">------------------</span><span>
+</span><span id="line-73"></span><span class="hs-comment">-- * Exercise 1.6.</span><span>
 </span><span id="line-74"></span><span class="hs-comment">------------------</span><span>
-</span><span id="line-75"></span><span class="hs-comment">-- * Exercise 1.6.</span><span>
-</span><span id="line-76"></span><span class="hs-comment">------------------</span><span>
-</span><span id="line-77"></span><span class="hs-comment">{- $ex16
-Why is there no associativity listed for the equality, inequality, and
-comparison operators in Table 1-2? (Hint: write down the simplest expression you
-can think of that would require the associativity rules to resolve the
-precedence of comparison operators and try to make sense of it.)
+</span><span id="line-75"></span><span class="hs-comment">{- $ex16
+__Why does associativity not apply for the equality, inequality, and__
+__comparison operators?__
 
 &gt; 3 &lt; 4 &lt; 5
 
 /Because comparison, equality, and inequality operators evaluate to Boolean values which cannot be further operated on with these same operators./
 -}</span><span>
-</span><span id="line-87"></span><span>
-</span><span id="line-88"></span></pre></body></html>
+</span><span id="line-83"></span><span>
+</span><span id="line-84"></span></pre></body></html>

@@ -53,7 +53,7 @@ sinDeg :: Double -> Double
 -- | <pre>
 --   f(x) = ∛x
 --   </pre>
-f' :: Double -> Double
+f25 :: Double -> Double
 
 -- | <pre>
 --   g(ɣ) = e^ɣ+8^ɣ
@@ -103,8 +103,8 @@ f :: Double -> Double
 --   </pre>
 e :: Double -> Double
 
--- | Return <a>True</a> if the input character is <tt>'X'</tt> or
---   <tt>'Y'</tt> and return <a>False</a> otherwise.
+-- | Returns <a>True</a> if the input character is <tt>'X'</tt> or
+--   <tt>'Y'</tt> or else <a>False</a>.
 --   
 --   <pre>
 --   &gt;&gt;&gt; isXorY 'X'
@@ -118,16 +118,16 @@ e :: Double -> Double
 --   </pre>
 isXorY :: Char -> Bool
 
--- | Return <tt>100</tt> if the person is checking bags and <tt>0</tt> if
+-- | Returns <tt>100</tt> if the person is checking bags and <tt>0</tt> if
 --   not. Implemented with <tt>if-then-else</tt>.
 bagFee :: Bool -> Int
 
--- | Return <tt>100</tt> if the person is checking bags and <tt>0</tt> if
+-- | Returns <tt>100</tt> if the person is checking bags and <tt>0</tt> if
 --   not. Implemented with pattern matching on the input.
 bagFee2 :: Bool -> Int
 
--- | Return <a>True</a> if the given integer is greater than 50 and return
---   <a>False</a> otherwise.
+-- | Returns <a>True</a> if the given integer is greater than 50 or else
+--   <a>False</a>
 greaterThan50 :: Integer -> Bool
 
 -- | Double the score without going over 100

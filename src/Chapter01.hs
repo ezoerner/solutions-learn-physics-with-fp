@@ -13,7 +13,7 @@ module Chapter01 where
 -- * Exercise 1.1.
 ------------------
 {- $ex11
-Evaluate @sin 30@ in GHCi. Why is it not equal to @0.5@?
+__Why is @sin 30@ not equal to @0.5@?__
 
 >>> sin 30
 -0.9880316240928618
@@ -48,15 +48,14 @@ Evaluate @sin 30@ in GHCi. Why is it not equal to @0.5@?
 -- * Exercise 1.4.
 ------------------
 {- $ex14
-Use the @atan2@ function in GHCi to find the polar coordinates @(r,θ)@ associated
-with Cartesian coordinates @(x, y) = (–3,4)@.
+__Calculate the polar coordinates @(r,θ)@ for Cartesian coordinates @(x, y) = (–3,4)@.__
 
 >>> theta = atan2 4 (-3)
 >>> x = -3
 >>> y = 4
->>> theta = atan2 y x
+>>> θ = atan2 y x
 >>> r = sqrt (x**2 + y**2)
->>> (r, theta)
+>>> (r, θ)
 (5.0,2.214297435588181)
 -}
 
@@ -64,8 +63,7 @@ with Cartesian coordinates @(x, y) = (–3,4)@.
 -- * Exercise 1.5.
 ------------------
 {- $ex15
-Find a new example of a calculation in which the computer produces a result that
-is just a little bit different from the exact result.
+__Find a new example of a non-exact calculation result.__
 
 >>> 3 ** (logBase 3 10)
 10.000000000000002
@@ -75,10 +73,8 @@ is just a little bit different from the exact result.
 -- * Exercise 1.6.
 ------------------
 {- $ex16
-Why is there no associativity listed for the equality, inequality, and
-comparison operators in Table 1-2? (Hint: write down the simplest expression you
-can think of that would require the associativity rules to resolve the
-precedence of comparison operators and try to make sense of it.)
+__Why does associativity not apply for the equality, inequality, and__
+__comparison operators?__
 
 > 3 < 4 < 5
 

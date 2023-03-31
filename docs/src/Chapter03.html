@@ -78,8 +78,8 @@ __(f)__ @2 &amp;&amp; 3 &lt; 4@
 </span><span id="line-60"></span><span>
 </span><span id="line-61"></span><span class="hs-comment">-- * Exercise 3.3</span><span>
 </span><span id="line-62"></span><span>
-</span><span id="line-63"></span><span class="hs-comment">-- | Return 'True' if the input character is @\'X\'@ or @\'Y\'@</span><span>
-</span><span id="line-64"></span><span class="hs-comment">-- and return 'False' otherwise.</span><span>
+</span><span id="line-63"></span><span class="hs-comment">-- | Returns 'True' if the input character is @\'X\'@ or @\'Y\'@</span><span>
+</span><span id="line-64"></span><span class="hs-comment">-- or else 'False'.</span><span>
 </span><span id="line-65"></span><span class="hs-comment">--</span><span>
 </span><span id="line-66"></span><span class="hs-comment">-- &gt;&gt;&gt; isXorY 'X'</span><span>
 </span><span id="line-67"></span><span class="hs-comment">-- True</span><span>
@@ -103,7 +103,7 @@ __(f)__ @2 &amp;&amp; 3 &lt; 4@
 </span><span id="line-78"></span><span class="hs-comment">-- * Exercise 3.4</span><span>
 </span><span id="line-79"></span><span class="hs-comment">------------------</span><span>
 </span><span id="line-80"></span><span>
-</span><span id="line-81"></span><span class="hs-comment">-- | Return @100@ if the person is checking bags and @0@ if not.</span><span>
+</span><span id="line-81"></span><span class="hs-comment">-- | Returns @100@ if the person is checking bags and @0@ if not.</span><span>
 </span><span id="line-82"></span><span class="hs-comment">-- Implemented with @if-then-else@.</span><span>
 </span><span id="line-83"></span><span class="annot"><a href="Chapter03.html#bagFee"><span class="hs-identifier hs-type">bagFee</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Bool</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span>
 </span><span id="line-84"></span><span id="bagFee"><span class="annot"><span class="annottext">bagFee :: Bool -&gt; Int
@@ -113,7 +113,7 @@ __(f)__ @2 &amp;&amp; 3 &lt; 4@
 </span><span class="hs-number">100</span></span><span> </span><span class="hs-keyword">else</span><span> </span><span class="annot"><span class="annottext">Int
 </span><span class="hs-number">0</span></span><span>
 </span><span id="line-85"></span><span>
-</span><span id="line-86"></span><span class="hs-comment">-- | Return @100@ if the person is checking bags and @0@ if not.</span><span>
+</span><span id="line-86"></span><span class="hs-comment">-- | Returns @100@ if the person is checking bags and @0@ if not.</span><span>
 </span><span id="line-87"></span><span class="hs-comment">-- Implemented with pattern matching on the input.</span><span>
 </span><span id="line-88"></span><span class="annot"><a href="Chapter03.html#bagFee2"><span class="hs-identifier hs-type">bagFee2</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Bool</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span>
 </span><span id="line-89"></span><span id="bagFee2"><span class="annot"><span class="annottext">bagFee2 :: Bool -&gt; Int
@@ -128,23 +128,22 @@ __(f)__ @2 &amp;&amp; 3 &lt; 4@
 </span><span id="line-93"></span><span class="hs-comment">-- * Exercise 3.5</span><span>
 </span><span id="line-94"></span><span class="hs-comment">------------------</span><span>
 </span><span id="line-95"></span><span>
-</span><span id="line-96"></span><span class="hs-comment">-- | Return 'True' if the given integer is greater than 50 and return 'False'</span><span>
-</span><span id="line-97"></span><span class="hs-comment">-- otherwise.</span><span>
-</span><span id="line-98"></span><span class="annot"><a href="Chapter03.html#greaterThan50"><span class="hs-identifier hs-type">greaterThan50</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Integer</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Bool</span></span><span>
-</span><span id="line-99"></span><span id="greaterThan50"><span class="annot"><span class="annottext">greaterThan50 :: Integer -&gt; Bool
+</span><span id="line-96"></span><span class="hs-comment">-- | Returns 'True' if the given integer is greater than 50 or else 'False'</span><span>
+</span><span id="line-97"></span><span class="annot"><a href="Chapter03.html#greaterThan50"><span class="hs-identifier hs-type">greaterThan50</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Integer</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Bool</span></span><span>
+</span><span id="line-98"></span><span id="greaterThan50"><span class="annot"><span class="annottext">greaterThan50 :: Integer -&gt; Bool
 </span><a href="Chapter03.html#greaterThan50"><span class="hs-identifier hs-var hs-var">greaterThan50</span></a></span></span><span> </span><span id="local-6989586621679039880"><span class="annot"><span class="annottext">Integer
 </span><a href="#local-6989586621679039880"><span class="hs-identifier hs-var">n</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Integer
 </span><a href="#local-6989586621679039880"><span class="hs-identifier hs-var">n</span></a></span><span> </span><span class="annot"><span class="annottext">forall a. Ord a =&gt; a -&gt; a -&gt; Bool
 </span><span class="hs-operator hs-var">&gt;</span></span><span> </span><span class="annot"><span class="annottext">Integer
 </span><span class="hs-number">50</span></span><span>
-</span><span id="line-100"></span><span>
-</span><span id="line-101"></span><span class="hs-comment">------------------</span><span>
-</span><span id="line-102"></span><span class="hs-comment">-- * Exercise 3.6</span><span>
-</span><span id="line-103"></span><span class="hs-comment">------------------</span><span>
-</span><span id="line-104"></span><span>
-</span><span id="line-105"></span><span class="hs-comment">-- | Double the score without going over 100</span><span>
-</span><span id="line-106"></span><span class="annot"><a href="Chapter03.html#amazingCurve"><span class="hs-identifier hs-type">amazingCurve</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span>
-</span><span id="line-107"></span><span id="amazingCurve"><span class="annot"><span class="annottext">amazingCurve :: Int -&gt; Int
+</span><span id="line-99"></span><span>
+</span><span id="line-100"></span><span class="hs-comment">------------------</span><span>
+</span><span id="line-101"></span><span class="hs-comment">-- * Exercise 3.6</span><span>
+</span><span id="line-102"></span><span class="hs-comment">------------------</span><span>
+</span><span id="line-103"></span><span>
+</span><span id="line-104"></span><span class="hs-comment">-- | Double the score without going over 100</span><span>
+</span><span id="line-105"></span><span class="annot"><a href="Chapter03.html#amazingCurve"><span class="hs-identifier hs-type">amazingCurve</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span>
+</span><span id="line-106"></span><span id="amazingCurve"><span class="annot"><span class="annottext">amazingCurve :: Int -&gt; Int
 </span><a href="Chapter03.html#amazingCurve"><span class="hs-identifier hs-var hs-var">amazingCurve</span></a></span></span><span> </span><span id="local-6989586621679039877"><span class="annot"><span class="annottext">Int
 </span><a href="#local-6989586621679039877"><span class="hs-identifier hs-var">score</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">forall a. Ord a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-identifier hs-var">min</span></span><span> </span><span class="annot"><span class="annottext">Int
@@ -152,49 +151,41 @@ __(f)__ @2 &amp;&amp; 3 &lt; 4@
 </span><a href="#local-6989586621679039877"><span class="hs-identifier hs-var">score</span></a></span><span> </span><span class="annot"><span class="annottext">forall a b. (Num a, Integral b) =&gt; a -&gt; b -&gt; a
 </span><span class="hs-operator hs-var">^</span></span><span> </span><span class="annot"><span class="annottext">Integer
 </span><span class="hs-number">2</span></span><span class="hs-special">)</span><span>
-</span><span id="line-108"></span><span>
-</span><span id="line-109"></span><span class="hs-comment">------------------</span><span>
-</span><span id="line-110"></span><span class="hs-comment">-- * Exercise 3.7</span><span>
-</span><span id="line-111"></span><span class="hs-comment">------------------</span><span>
-</span><span id="line-112"></span><span class="hs-comment">{- $ex37
-What is the type of the expression @bagFee False@ using the definition of
-'bagFee' you wrote in Exercise 3.4?
-
+</span><span id="line-107"></span><span>
+</span><span id="line-108"></span><span class="hs-comment">------------------</span><span>
+</span><span id="line-109"></span><span class="hs-comment">-- * Exercise 3.7</span><span>
+</span><span id="line-110"></span><span class="hs-comment">------------------</span><span>
+</span><span id="line-111"></span><span class="hs-comment">{- $ex37
 &gt;&gt;&gt; :type bagFee False
 bagFee False :: Int
-
-What is the value of the expression @bagFee False@ using that definition of bagFee?
 
 &gt;&gt;&gt; bagFee False
 0
 -}</span><span>
-</span><span id="line-124"></span><span>
-</span><span id="line-125"></span><span class="hs-comment">------------------</span><span>
-</span><span id="line-126"></span><span class="hs-comment">-- * Exercise 3.8</span><span>
-</span><span id="line-127"></span><span class="hs-comment">------------------</span><span>
-</span><span id="line-128"></span><span class="hs-comment">{- $ex38
-/Give every function a type signature./
--}</span><span>
-</span><span id="line-131"></span><span>
-</span><span id="line-132"></span><span class="hs-comment">-- | @circleRadius = 3.5@</span><span>
-</span><span id="line-133"></span><span class="annot"><a href="Chapter03.html#circleRadius"><span class="hs-identifier hs-type">circleRadius</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Double</span></span><span>
-</span><span id="line-134"></span><span id="circleRadius"><span class="annot"><span class="annottext">circleRadius :: Double
+</span><span id="line-118"></span><span>
+</span><span id="line-119"></span><span class="hs-comment">------------------</span><span>
+</span><span id="line-120"></span><span class="hs-comment">-- * Exercise 3.8</span><span>
+</span><span id="line-121"></span><span class="hs-comment">------------------</span><span>
+</span><span id="line-122"></span><span>
+</span><span id="line-123"></span><span class="hs-comment">-- | @circleRadius = 3.5@</span><span>
+</span><span id="line-124"></span><span class="annot"><a href="Chapter03.html#circleRadius"><span class="hs-identifier hs-type">circleRadius</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Double</span></span><span>
+</span><span id="line-125"></span><span id="circleRadius"><span class="annot"><span class="annottext">circleRadius :: Double
 </span><a href="Chapter03.html#circleRadius"><span class="hs-identifier hs-var hs-var">circleRadius</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Double
 </span><span class="hs-number">3.5</span></span><span>
-</span><span id="line-135"></span><span>
-</span><span id="line-136"></span><span class="hs-comment">-- | @cot x = 1 / tan x@</span><span>
-</span><span id="line-137"></span><span class="annot"><a href="Chapter03.html#cot"><span class="hs-identifier hs-type">cot</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Double</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Double</span></span><span>
-</span><span id="line-138"></span><span id="cot"><span class="annot"><span class="annottext">cot :: Double -&gt; Double
+</span><span id="line-126"></span><span>
+</span><span id="line-127"></span><span class="hs-comment">-- | @cot x = 1 / tan x@</span><span>
+</span><span id="line-128"></span><span class="annot"><a href="Chapter03.html#cot"><span class="hs-identifier hs-type">cot</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Double</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Double</span></span><span>
+</span><span id="line-129"></span><span id="cot"><span class="annot"><span class="annottext">cot :: Double -&gt; Double
 </span><a href="Chapter03.html#cot"><span class="hs-identifier hs-var hs-var">cot</span></a></span></span><span> </span><span id="local-6989586621679039872"><span class="annot"><span class="annottext">Double
 </span><a href="#local-6989586621679039872"><span class="hs-identifier hs-var">x</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Double
 </span><span class="hs-number">1</span></span><span> </span><span class="annot"><span class="annottext">forall a. Fractional a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">/</span></span><span> </span><span class="annot"><span class="annottext">forall a. Floating a =&gt; a -&gt; a
 </span><span class="hs-identifier hs-var">tan</span></span><span> </span><span class="annot"><span class="annottext">Double
 </span><a href="#local-6989586621679039872"><span class="hs-identifier hs-var">x</span></a></span><span>
-</span><span id="line-139"></span><span>
-</span><span id="line-140"></span><span class="hs-comment">-- | @fe epsilon = epsilon * tan (epsilon * pi / 2)@</span><span>
-</span><span id="line-141"></span><span class="annot"><a href="Chapter03.html#fe"><span class="hs-identifier hs-type">fe</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Double</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Double</span></span><span>
-</span><span id="line-142"></span><span id="fe"><span class="annot"><span class="annottext">fe :: Double -&gt; Double
+</span><span id="line-130"></span><span>
+</span><span id="line-131"></span><span class="hs-comment">-- | @fe epsilon = epsilon * tan (epsilon * pi / 2)@</span><span>
+</span><span id="line-132"></span><span class="annot"><a href="Chapter03.html#fe"><span class="hs-identifier hs-type">fe</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Double</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Double</span></span><span>
+</span><span id="line-133"></span><span id="fe"><span class="annot"><span class="annottext">fe :: Double -&gt; Double
 </span><a href="Chapter03.html#fe"><span class="hs-identifier hs-var hs-var">fe</span></a></span></span><span> </span><span id="local-6989586621679039869"><span class="annot"><span class="annottext">Double
 </span><a href="#local-6989586621679039869"><span class="hs-identifier hs-var">epsilon</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Double
 </span><a href="#local-6989586621679039869"><span class="hs-identifier hs-var">epsilon</span></a></span><span> </span><span class="annot"><span class="annottext">forall a. Num a =&gt; a -&gt; a -&gt; a
@@ -205,10 +196,10 @@ What is the value of the expression @bagFee False@ using that definition of bagF
 </span><span class="hs-identifier hs-var">pi</span></span><span> </span><span class="annot"><span class="annottext">forall a. Fractional a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">/</span></span><span> </span><span class="annot"><span class="annottext">Double
 </span><span class="hs-number">2</span></span><span class="hs-special">)</span><span>
-</span><span id="line-143"></span><span>
-</span><span id="line-144"></span><span class="hs-comment">-- | @fo epsilon = -epsilon * cot (epsilon * pi / 2)@</span><span>
-</span><span id="line-145"></span><span class="annot"><a href="Chapter03.html#fo"><span class="hs-identifier hs-type">fo</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Double</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Double</span></span><span>
-</span><span id="line-146"></span><span id="fo"><span class="annot"><span class="annottext">fo :: Double -&gt; Double
+</span><span id="line-134"></span><span>
+</span><span id="line-135"></span><span class="hs-comment">-- | @fo epsilon = -epsilon * cot (epsilon * pi / 2)@</span><span>
+</span><span id="line-136"></span><span class="annot"><a href="Chapter03.html#fo"><span class="hs-identifier hs-type">fo</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Double</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Double</span></span><span>
+</span><span id="line-137"></span><span id="fo"><span class="annot"><span class="annottext">fo :: Double -&gt; Double
 </span><a href="Chapter03.html#fo"><span class="hs-identifier hs-var hs-var">fo</span></a></span></span><span> </span><span id="local-6989586621679039865"><span class="annot"><span class="annottext">Double
 </span><a href="#local-6989586621679039865"><span class="hs-identifier hs-var">epsilon</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-glyph">-</span><span class="annot"><span class="annottext">Double
 </span><a href="#local-6989586621679039865"><span class="hs-identifier hs-var">epsilon</span></a></span><span> </span><span class="annot"><span class="annottext">forall a. Num a =&gt; a -&gt; a -&gt; a
@@ -219,10 +210,10 @@ What is the value of the expression @bagFee False@ using that definition of bagF
 </span><span class="hs-identifier hs-var">pi</span></span><span> </span><span class="annot"><span class="annottext">forall a. Fractional a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">/</span></span><span> </span><span class="annot"><span class="annottext">Double
 </span><span class="hs-number">2</span></span><span class="hs-special">)</span><span>
-</span><span id="line-147"></span><span>
-</span><span id="line-148"></span><span class="hs-comment">-- | @g nu epsilon = sqrt (nu ** 2 - epsilon ** 2)@</span><span>
-</span><span id="line-149"></span><span class="annot"><a href="Chapter03.html#g"><span class="hs-identifier hs-type">g</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Double</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Double</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Double</span></span><span>
-</span><span id="line-150"></span><span id="g"><span class="annot"><span class="annottext">g :: Double -&gt; Double -&gt; Double
+</span><span id="line-138"></span><span>
+</span><span id="line-139"></span><span class="hs-comment">-- | @g nu epsilon = sqrt (nu ** 2 - epsilon ** 2)@</span><span>
+</span><span id="line-140"></span><span class="annot"><a href="Chapter03.html#g"><span class="hs-identifier hs-type">g</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Double</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Double</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Double</span></span><span>
+</span><span id="line-141"></span><span id="g"><span class="annot"><span class="annottext">g :: Double -&gt; Double -&gt; Double
 </span><a href="Chapter03.html#g"><span class="hs-identifier hs-var hs-var">g</span></a></span></span><span> </span><span id="local-6989586621679039863"><span class="annot"><span class="annottext">Double
 </span><a href="#local-6989586621679039863"><span class="hs-identifier hs-var">nu</span></a></span></span><span> </span><span id="local-6989586621679039862"><span class="annot"><span class="annottext">Double
 </span><a href="#local-6989586621679039862"><span class="hs-identifier hs-var">epsilon</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">forall a. Floating a =&gt; a -&gt; a
@@ -234,28 +225,28 @@ What is the value of the expression @bagFee False@ using that definition of bagF
 </span><a href="#local-6989586621679039862"><span class="hs-identifier hs-var">epsilon</span></a></span><span> </span><span class="annot"><span class="annottext">forall a. Floating a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">**</span></span><span> </span><span class="annot"><span class="annottext">Double
 </span><span class="hs-number">2</span></span><span class="hs-special">)</span><span>
-</span><span id="line-151"></span><span>
-</span><span id="line-152"></span><span class="hs-comment">------------------</span><span>
-</span><span id="line-153"></span><span class="hs-comment">-- * Exercise 3.9</span><span>
-</span><span id="line-154"></span><span class="hs-comment">------------------</span><span>
-</span><span id="line-155"></span><span class="hs-comment">{- $ex39
-There are only a finite number of functions with type @Bool -&gt; Bool@. How many are there?
+</span><span id="line-142"></span><span>
+</span><span id="line-143"></span><span class="hs-comment">------------------</span><span>
+</span><span id="line-144"></span><span class="hs-comment">-- * Exercise 3.9</span><span>
+</span><span id="line-145"></span><span class="hs-comment">------------------</span><span>
+</span><span id="line-146"></span><span class="hs-comment">{- $ex39
+__How many functions with type @Bool -&gt; Bool@ are there?__
 
 /There are 4 @Bool -&gt; Bool@ functions./
 
-What would be good names for them?
+__What would be good names for them?__
 
 /@alwaysFalse@, @alwaysTrue@, 'identity', and 'not'/
 
-How many functions have type @Bool -&gt; Bool -&gt; Bool@?
+__How many functions have type @Bool -&gt; Bool -&gt; Bool@?__
 
 /There are 16 @Bool -&gt; Bool -&gt; Bool@ functions./
 
 Source: [The 16 Boolean Logic Functions of Two-Input Systems](https://www.allaboutcircuits.com/technical-articles/16-boolean-logic-functions-of-2-input-system/)
 -}</span><span>
-</span><span id="line-170"></span><span>
-</span><span id="line-171"></span><span class="hs-comment">------------------</span><span>
-</span><span id="line-172"></span><span class="hs-comment">-- * Exercise 3.10</span><span>
-</span><span id="line-173"></span><span class="hs-comment">------------------</span><span>
-</span><span id="line-174"></span><span class="hs-comment">-- $ex310</span><span>
-</span><span id="line-175"></span><span class="hs-comment">-- &gt; True || False &amp;&amp; False</span></pre></body></html>
+</span><span id="line-161"></span><span>
+</span><span id="line-162"></span><span class="hs-comment">------------------</span><span>
+</span><span id="line-163"></span><span class="hs-comment">-- * Exercise 3.10</span><span>
+</span><span id="line-164"></span><span class="hs-comment">------------------</span><span>
+</span><span id="line-165"></span><span class="hs-comment">-- $ex310</span><span>
+</span><span id="line-166"></span><span class="hs-comment">-- &gt; True || False &amp;&amp; False</span></pre></body></html>
