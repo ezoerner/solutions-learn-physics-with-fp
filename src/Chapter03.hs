@@ -1,4 +1,7 @@
 -----------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------
+
 -- |
 -- Module      : Chapter03
 -- Description : Types and Entities
@@ -6,42 +9,43 @@
 -- Copyright   : (c) Eric Zoerner, 2023
 -- License     : BSD3
 -- Maintainer  : eric.zoerner@proton.me
---
------------------------------------------------------------------------------
-
 module Chapter03 where
 
 ------------------
+
 -- * Exercise 3.1
-------------------
-{- $ex31
-__(a)__ @(False || (True && False)) || True@
-
->:: Bool
-
-__(b)__ @((2 / 3) / 4) == ((4 / 3) /2)@
-
->:: Bool
-
-__(c)__ @((7 - (5 / 4)) > 6) || (((2 ^ 5) - 1) == 31)@
-
->:: Bool
-
-__(d)__ @2 < 3 < 4@
-
-/Not well formed: cannot operate on Bool with comparison operators./
-
-__(e)__ @(2 < 3) || (3 < 4)@
-
->:: Bool
-
-__(f)__ @2 && 3 < 4@
-
-/Not well formed: cannot operate on numeric types with logical && operator./
--}
 
 ------------------
+
+-- $ex31
+-- __(a)__ @(False || (True && False)) || True@
+--
+-- >:: Bool
+--
+-- __(b)__ @((2 / 3) / 4) == ((4 / 3) /2)@
+--
+-- >:: Bool
+--
+-- __(c)__ @((7 - (5 / 4)) > 6) || (((2 ^ 5) - 1) == 31)@
+--
+-- >:: Bool
+--
+-- __(d)__ @2 < 3 < 4@
+--
+-- /Not well formed: cannot operate on Bool with comparison operators./
+--
+-- __(e)__ @(2 < 3) || (3 < 4)@
+--
+-- >:: Bool
+--
+-- __(f)__ @2 && 3 < 4@
+--
+-- /Not well formed: cannot operate on numeric types with logical && operator./
+
+------------------
+
 -- * Exercise 3.2
+
 ------------------
 
 -- | @f(x) = { 0, x ≤ 0; x, x > 0}@
@@ -75,7 +79,9 @@ isXorY 'Y' = True
 isXorY _ = False
 
 ------------------
+
 -- * Exercise 3.4
+
 ------------------
 
 -- | Returns @100@ if the person is checking bags and @0@ if not.
@@ -90,7 +96,9 @@ bagFee2 True = 100
 bagFee2 _ = 0
 
 ------------------
+
 -- * Exercise 3.5
+
 ------------------
 
 -- | Returns 'True' if the given integer is greater than 50 or else 'False'
@@ -98,26 +106,37 @@ greaterThan50 :: Integer -> Bool
 greaterThan50 n = n > 50
 
 ------------------
+
 -- * Exercise 3.6
+
 ------------------
 
 -- | Double the score without going over 100
+--
+-- >>> amazingCurve 30
+-- 60
+-- >>> amazingCurve 80
+-- 100
 amazingCurve :: Int -> Int
-amazingCurve score = min 100 (score ^ 2)
+amazingCurve score = min 100 (score * 2)
 
 ------------------
+
 -- * Exercise 3.7
-------------------
-{- $ex37
->>> :type bagFee False
-bagFee False :: Int
-
->>> bagFee False
-0
--}
 
 ------------------
+
+-- $ex37
+-- >>> :type bagFee False
+-- bagFee False :: Int
+--
+-- >>> bagFee False
+-- 0
+
+------------------
+
 -- * Exercise 3.8
+
 ------------------
 
 -- | @circleRadius = 3.5@
@@ -141,26 +160,31 @@ g :: Double -> Double -> Double
 g nu epsilon = sqrt (nu ** 2 - epsilon ** 2)
 
 ------------------
+
 -- * Exercise 3.9
-------------------
-{- $ex39
-__How many functions with type @Bool -> Bool@ are there?__
-
-/There are 4 @Bool -> Bool@ functions./
-
-__What would be good names for them?__
-
-/@alwaysFalse@, @alwaysTrue@, 'identity', and 'not'/
-
-__How many functions have type @Bool -> Bool -> Bool@?__
-
-/There are 16 @Bool -> Bool -> Bool@ functions./
-
-Source: [The 16 Boolean Logic Functions of Two-Input Systems](https://www.allaboutcircuits.com/technical-articles/16-boolean-logic-functions-of-2-input-system/)
--}
 
 ------------------
+
+-- $ex39
+-- __How many functions with type @Bool -> Bool@ are there?__
+--
+-- /There are 4 @Bool -> Bool@ functions./
+--
+-- __What would be good names for them?__
+--
+-- /@alwaysFalse@, @alwaysTrue@, 'identity', and 'not'/
+--
+-- __How many functions have type @Bool -> Bool -> Bool@?__
+--
+-- /There are 16 @Bool -> Bool -> Bool@ functions./
+--
+-- Source: [The 16 Boolean Logic Functions of Two-Input Systems](https://www.allaboutcircuits.com/technical-articles/16-boolean-logic-functions-of-2-input-system/)
+
+------------------
+
 -- * Exercise 3.10
+
 ------------------
+
 -- $ex310
 -- > True || False && False

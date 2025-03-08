@@ -21,31 +21,31 @@
 </span><span id="line-21"></span><span class="annot"><span class="hs-comment">-- | Numerical derivation given a small delta</span></span><span>
 </span><span id="line-22"></span><span class="annot"><a href="Chapter04.html#derivative"><span class="hs-identifier hs-type">derivative</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Chapter04.html#R"><span class="hs-identifier hs-type">R</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Chapter04.html#Derivative"><span class="hs-identifier hs-type">Derivative</span></a></span><span>
 </span><span id="line-23"></span><span id="derivative"><span class="annot"><span class="annottext">derivative :: R -&gt; Derivative
-</span><a href="Chapter04.html#derivative"><span class="hs-identifier hs-var hs-var">derivative</span></a></span></span><span> </span><span id="local-6989586621679040938"><span class="annot"><span class="annottext">R
-</span><a href="#local-6989586621679040938"><span class="hs-identifier hs-var">dt</span></a></span></span><span> </span><span id="local-6989586621679040939"><span class="annot"><span class="annottext">R -&gt; R
-</span><a href="#local-6989586621679040939"><span class="hs-identifier hs-var">x</span></a></span></span><span> </span><span id="local-6989586621679040940"><span class="annot"><span class="annottext">R
-</span><a href="#local-6989586621679040940"><span class="hs-identifier hs-var">t</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">R -&gt; R
-</span><a href="#local-6989586621679040939"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">R
-</span><a href="#local-6989586621679040940"><span class="hs-identifier hs-var">t</span></a></span><span> </span><span class="annot"><span class="annottext">R -&gt; R -&gt; R
+</span><a href="Chapter04.html#derivative"><span class="hs-identifier hs-var hs-var">derivative</span></a></span></span><span> </span><span id="local-6989586621679040911"><span class="annot"><span class="annottext">R
+</span><a href="#local-6989586621679040911"><span class="hs-identifier hs-var">dt</span></a></span></span><span> </span><span id="local-6989586621679040912"><span class="annot"><span class="annottext">R -&gt; R
+</span><a href="#local-6989586621679040912"><span class="hs-identifier hs-var">x</span></a></span></span><span> </span><span id="local-6989586621679040913"><span class="annot"><span class="annottext">R
+</span><a href="#local-6989586621679040913"><span class="hs-identifier hs-var">t</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">R -&gt; R
+</span><a href="#local-6989586621679040912"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">R
+</span><a href="#local-6989586621679040913"><span class="hs-identifier hs-var">t</span></a></span><span> </span><span class="annot"><span class="annottext">R -&gt; R -&gt; R
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">+</span></span><span> </span><span class="annot"><span class="annottext">R
-</span><a href="#local-6989586621679040938"><span class="hs-identifier hs-var">dt</span></a></span><span> </span><span class="annot"><span class="annottext">R -&gt; R -&gt; R
+</span><a href="#local-6989586621679040911"><span class="hs-identifier hs-var">dt</span></a></span><span> </span><span class="annot"><span class="annottext">R -&gt; R -&gt; R
 forall a. Fractional a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">/</span></span><span> </span><span class="annot"><span class="annottext">R
 </span><span class="hs-number">2</span></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">R -&gt; R -&gt; R
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-glyph hs-var">-</span></span><span> </span><span class="annot"><span class="annottext">R -&gt; R
-</span><a href="#local-6989586621679040939"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">R
-</span><a href="#local-6989586621679040940"><span class="hs-identifier hs-var">t</span></a></span><span> </span><span class="annot"><span class="annottext">R -&gt; R -&gt; R
+</span><a href="#local-6989586621679040912"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">R
+</span><a href="#local-6989586621679040913"><span class="hs-identifier hs-var">t</span></a></span><span> </span><span class="annot"><span class="annottext">R -&gt; R -&gt; R
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-glyph hs-var">-</span></span><span> </span><span class="annot"><span class="annottext">R
-</span><a href="#local-6989586621679040938"><span class="hs-identifier hs-var">dt</span></a></span><span> </span><span class="annot"><span class="annottext">R -&gt; R -&gt; R
+</span><a href="#local-6989586621679040911"><span class="hs-identifier hs-var">dt</span></a></span><span> </span><span class="annot"><span class="annottext">R -&gt; R -&gt; R
 forall a. Fractional a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">/</span></span><span> </span><span class="annot"><span class="annottext">R
 </span><span class="hs-number">2</span></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">R -&gt; R -&gt; R
 forall a. Fractional a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">/</span></span><span> </span><span class="annot"><span class="annottext">R
-</span><a href="#local-6989586621679040938"><span class="hs-identifier hs-var">dt</span></a></span><span>
+</span><a href="#local-6989586621679040911"><span class="hs-identifier hs-var">dt</span></a></span><span>
 </span><span id="line-24"></span><span>
 </span><span id="line-25"></span><span class="hs-comment">------------------</span><span>
 </span><span id="line-26"></span><span class="annot"><span class="hs-comment">-- * Exercise 4.1</span></span><span>
@@ -67,15 +67,15 @@ forall a. Fractional a =&gt; a -&gt; a -&gt; a
 </span><span id="line-42"></span><span class="annot"><span class="hs-comment">-- | @f(x) = &#189;x&#178;@</span></span><span>
 </span><span id="line-43"></span><span class="annot"><a href="Chapter04.html#f41"><span class="hs-identifier hs-type">f41</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Chapter04.html#R"><span class="hs-identifier hs-type">R</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Chapter04.html#R"><span class="hs-identifier hs-type">R</span></a></span><span>
 </span><span id="line-44"></span><span id="f41"><span class="annot"><span class="annottext">f41 :: R -&gt; R
-</span><a href="Chapter04.html#f41"><span class="hs-identifier hs-var hs-var">f41</span></a></span></span><span> </span><span id="local-6989586621679040944"><span class="annot"><span class="annottext">R
-</span><a href="#local-6989586621679040944"><span class="hs-identifier hs-var">x</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">R
+</span><a href="Chapter04.html#f41"><span class="hs-identifier hs-var hs-var">f41</span></a></span></span><span> </span><span id="local-6989586621679040917"><span class="annot"><span class="annottext">R
+</span><a href="#local-6989586621679040917"><span class="hs-identifier hs-var">x</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">R
 </span><span class="hs-number">1</span></span><span> </span><span class="annot"><span class="annottext">R -&gt; R -&gt; R
 forall a. Fractional a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">/</span></span><span> </span><span class="annot"><span class="annottext">R
 </span><span class="hs-number">2</span></span><span> </span><span class="annot"><span class="annottext">R -&gt; R -&gt; R
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">*</span></span><span> </span><span class="annot"><span class="annottext">R
-</span><a href="#local-6989586621679040944"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">R -&gt; R -&gt; R
+</span><a href="#local-6989586621679040917"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">R -&gt; R -&gt; R
 forall a. Floating a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">**</span></span><span> </span><span class="annot"><span class="annottext">R
 </span><span class="hs-number">2</span></span><span>
@@ -157,9 +157,9 @@ a = &#8730; ((0.01)(0.03)(4))
 </span><span id="line-120"></span><span class="annot"><span class="hs-comment">-- | @f(x) = x&#179;@</span></span><span>
 </span><span id="line-121"></span><span class="annot"><a href="Chapter04.html#f42"><span class="hs-identifier hs-type">f42</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Chapter04.html#R"><span class="hs-identifier hs-type">R</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Chapter04.html#R"><span class="hs-identifier hs-type">R</span></a></span><span>
 </span><span id="line-122"></span><span id="f42"><span class="annot"><span class="annottext">f42 :: R -&gt; R
-</span><a href="Chapter04.html#f42"><span class="hs-identifier hs-var hs-var">f42</span></a></span></span><span> </span><span id="local-6989586621679040950"><span class="annot"><span class="annottext">R
-</span><a href="#local-6989586621679040950"><span class="hs-identifier hs-var">x</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">R
-</span><a href="#local-6989586621679040950"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">R -&gt; R -&gt; R
+</span><a href="Chapter04.html#f42"><span class="hs-identifier hs-var hs-var">f42</span></a></span></span><span> </span><span id="local-6989586621679040923"><span class="annot"><span class="annottext">R
+</span><a href="#local-6989586621679040923"><span class="hs-identifier hs-var">x</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">R
+</span><a href="#local-6989586621679040923"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">R -&gt; R -&gt; R
 forall a. Floating a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">**</span></span><span> </span><span class="annot"><span class="annottext">R
 </span><span class="hs-number">3</span></span><span>
@@ -167,12 +167,12 @@ forall a. Floating a =&gt; a -&gt; a -&gt; a
 </span><span id="line-124"></span><span class="annot"><span class="hs-comment">-- | Derivative of 'f42', @f(x) = 3x&#178;@.</span></span><span>
 </span><span id="line-125"></span><span class="annot"><a href="Chapter04.html#df42"><span class="hs-identifier hs-type">df42</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Chapter04.html#R"><span class="hs-identifier hs-type">R</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Chapter04.html#R"><span class="hs-identifier hs-type">R</span></a></span><span>
 </span><span id="line-126"></span><span id="df42"><span class="annot"><span class="annottext">df42 :: R -&gt; R
-</span><a href="Chapter04.html#df42"><span class="hs-identifier hs-var hs-var">df42</span></a></span></span><span> </span><span id="local-6989586621679040952"><span class="annot"><span class="annottext">R
-</span><a href="#local-6989586621679040952"><span class="hs-identifier hs-var">x</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">R
+</span><a href="Chapter04.html#df42"><span class="hs-identifier hs-var hs-var">df42</span></a></span></span><span> </span><span id="local-6989586621679040925"><span class="annot"><span class="annottext">R
+</span><a href="#local-6989586621679040925"><span class="hs-identifier hs-var">x</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">R
 </span><span class="hs-number">3</span></span><span> </span><span class="annot"><span class="annottext">R -&gt; R -&gt; R
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">*</span></span><span> </span><span class="annot"><span class="annottext">R
-</span><a href="#local-6989586621679040952"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">R -&gt; R -&gt; R
+</span><a href="#local-6989586621679040925"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">R -&gt; R -&gt; R
 forall a. Floating a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">**</span></span><span> </span><span class="annot"><span class="annottext">R
 </span><span class="hs-number">2</span></span><span>
@@ -191,23 +191,23 @@ forall a. Floating a =&gt; a -&gt; a -&gt; a
 </span><span id="line-139"></span><span>  </span><span class="annot"><span class="hs-comment">-- | Returns the error</span></span><span>
 </span><span id="line-140"></span><span>  </span><span class="annot"><a href="Chapter04.html#R"><span class="hs-identifier hs-type">R</span></a></span><span>
 </span><span id="line-141"></span><span id="errF"><span class="annot"><span class="annottext">errF :: (R -&gt; R) -&gt; (R -&gt; R) -&gt; R -&gt; R -&gt; R
-</span><a href="Chapter04.html#errF"><span class="hs-identifier hs-var hs-var">errF</span></a></span></span><span> </span><span id="local-6989586621679040954"><span class="annot"><span class="annottext">R -&gt; R
-</span><a href="#local-6989586621679040954"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span id="local-6989586621679040955"><span class="annot"><span class="annottext">R -&gt; R
-</span><a href="#local-6989586621679040955"><span class="hs-identifier hs-var">df</span></a></span></span><span> </span><span id="local-6989586621679040956"><span class="annot"><span class="annottext">R
-</span><a href="#local-6989586621679040956"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span id="local-6989586621679040957"><span class="annot"><span class="annottext">R
-</span><a href="#local-6989586621679040957"><span class="hs-identifier hs-var">x</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">R -&gt; R
+</span><a href="Chapter04.html#errF"><span class="hs-identifier hs-var hs-var">errF</span></a></span></span><span> </span><span id="local-6989586621679040927"><span class="annot"><span class="annottext">R -&gt; R
+</span><a href="#local-6989586621679040927"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span id="local-6989586621679040928"><span class="annot"><span class="annottext">R -&gt; R
+</span><a href="#local-6989586621679040928"><span class="hs-identifier hs-var">df</span></a></span></span><span> </span><span id="local-6989586621679040929"><span class="annot"><span class="annottext">R
+</span><a href="#local-6989586621679040929"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span id="local-6989586621679040930"><span class="annot"><span class="annottext">R
+</span><a href="#local-6989586621679040930"><span class="hs-identifier hs-var">x</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">R -&gt; R
 forall a. Num a =&gt; a -&gt; a
 </span><span class="hs-identifier hs-var">abs</span></span><span> </span><span class="annot"><span class="annottext">Derivative
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">R -&gt; Derivative
 </span><a href="Chapter04.html#derivative"><span class="hs-identifier hs-var">derivative</span></a></span><span> </span><span class="annot"><span class="annottext">R
-</span><a href="#local-6989586621679040956"><span class="hs-identifier hs-var">a</span></a></span><span> </span><span class="annot"><span class="annottext">R -&gt; R
-</span><a href="#local-6989586621679040954"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">R
-</span><a href="#local-6989586621679040957"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">R -&gt; R -&gt; R
+</span><a href="#local-6989586621679040929"><span class="hs-identifier hs-var">a</span></a></span><span> </span><span class="annot"><span class="annottext">R -&gt; R
+</span><a href="#local-6989586621679040927"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">R
+</span><a href="#local-6989586621679040930"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">R -&gt; R -&gt; R
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-glyph hs-var">-</span></span><span> </span><span class="annot"><span class="annottext">R -&gt; R
-</span><a href="#local-6989586621679040955"><span class="hs-identifier hs-var">df</span></a></span><span> </span><span class="annot"><span class="annottext">R
-</span><a href="#local-6989586621679040957"><span class="hs-identifier hs-var">x</span></a></span><span>
+</span><a href="#local-6989586621679040928"><span class="hs-identifier hs-var">df</span></a></span><span> </span><span class="annot"><span class="annottext">R
+</span><a href="#local-6989586621679040930"><span class="hs-identifier hs-var">x</span></a></span><span>
 </span><span id="line-142"></span><span>
 </span><span id="line-143"></span><span class="annot"><span class="hs-comment">-- | Error function for 'f42'.</span></span><span>
 </span><span id="line-144"></span><span class="annot"><a href="Chapter04.html#err42"><span class="hs-identifier hs-type">err42</span></a></span><span> </span><span class="hs-glyph">::</span><span>
@@ -233,9 +233,9 @@ forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span id="line-160"></span><span>  </span><span class="annot"><span class="hs-comment">-- | Returns the error</span></span><span>
 </span><span id="line-161"></span><span>  </span><span class="annot"><a href="Chapter04.html#R"><span class="hs-identifier hs-type">R</span></a></span><span>
 </span><span id="line-162"></span><span id="errA"><span class="annot"><span class="annottext">errA :: R -&gt; R
-</span><a href="Chapter04.html#errA"><span class="hs-identifier hs-var hs-var">errA</span></a></span></span><span> </span><span id="local-6989586621679040959"><span class="annot"><span class="annottext">R
-</span><a href="#local-6989586621679040959"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">R
-</span><a href="#local-6989586621679040959"><span class="hs-identifier hs-var">a</span></a></span><span> </span><span class="annot"><span class="annottext">R -&gt; R -&gt; R
+</span><a href="Chapter04.html#errA"><span class="hs-identifier hs-var hs-var">errA</span></a></span></span><span> </span><span id="local-6989586621679040932"><span class="annot"><span class="annottext">R
+</span><a href="#local-6989586621679040932"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">R
+</span><a href="#local-6989586621679040932"><span class="hs-identifier hs-var">a</span></a></span><span> </span><span class="annot"><span class="annottext">R -&gt; R -&gt; R
 forall a. Floating a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">**</span></span><span> </span><span class="annot"><span class="annottext">R
 </span><span class="hs-number">2</span></span><span> </span><span class="annot"><span class="annottext">R -&gt; R -&gt; R
@@ -278,11 +278,11 @@ forall a. Floating a =&gt; a -&gt; a
 </span><span id="line-193"></span><span>
 </span><span id="line-194"></span><span class="annot"><a href="Chapter04.html#df44"><span class="hs-identifier hs-type">df44</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Chapter04.html#R"><span class="hs-identifier hs-type">R</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Chapter04.html#R"><span class="hs-identifier hs-type">R</span></a></span><span>
 </span><span id="line-195"></span><span id="df44"><span class="annot"><span class="annottext">df44 :: R -&gt; R
-</span><a href="Chapter04.html#df44"><span class="hs-identifier hs-var hs-var">df44</span></a></span></span><span> </span><span id="local-6989586621679040963"><span class="annot"><span class="annottext">R
-</span><a href="#local-6989586621679040963"><span class="hs-identifier hs-var">x</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-glyph">-</span><span class="annot"><span class="annottext">R -&gt; R
+</span><a href="Chapter04.html#df44"><span class="hs-identifier hs-var hs-var">df44</span></a></span></span><span> </span><span id="local-6989586621679040936"><span class="annot"><span class="annottext">R
+</span><a href="#local-6989586621679040936"><span class="hs-identifier hs-var">x</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-glyph">-</span><span class="annot"><span class="annottext">R -&gt; R
 forall a. Floating a =&gt; a -&gt; a
 </span><span class="hs-identifier hs-var">sin</span></span><span> </span><span class="annot"><span class="annottext">R
-</span><a href="#local-6989586621679040963"><span class="hs-identifier hs-var">x</span></a></span><span>
+</span><a href="#local-6989586621679040936"><span class="hs-identifier hs-var">x</span></a></span><span>
 </span><span id="line-196"></span><span>
 </span><span id="line-197"></span><span class="hs-comment">------------------</span><span>
 </span><span id="line-198"></span><span class="annot"><span class="hs-comment">-- * Exercise 4.5</span></span><span>

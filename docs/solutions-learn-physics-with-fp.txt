@@ -131,6 +131,14 @@ bagFee2 :: Bool -> Int
 greaterThan50 :: Integer -> Bool
 
 -- | Double the score without going over 100
+--   
+--   <pre>
+--   &gt;&gt;&gt; amazingCurve 30
+--   60
+--   
+--   &gt;&gt;&gt; amazingCurve 80
+--   100
+--   </pre>
 amazingCurve :: Int -> Int
 
 -- | <pre>
