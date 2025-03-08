@@ -1,18 +1,18 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><link rel="stylesheet" type="text/css" href="style.css" /><script type="text/javascript" src="highlight.js"></script></head><body><pre><span class="hs-comment">{- |
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><link rel="stylesheet" type="text/css" href="style.css" /><script type="text/javascript" src="highlight.js"></script></head><body><pre><span class="annot"><span class="hs-comment">{- |
 Module      : Chapter01
 Description : Calculating with Haskell
 
 Copyright   : (c) Eric Zoerner, 2023
 License     : BSD3
 Maintainer  : eric.zoerner@proton.me
--}</span><span>
+-}</span></span><span>
 </span><span id="line-9"></span><span>
 </span><span id="line-10"></span><span class="hs-keyword">module</span><span> </span><span class="hs-identifier">Chapter01</span><span> </span><span class="hs-keyword">where</span><span>
 </span><span id="line-11"></span><span>
 </span><span id="line-12"></span><span class="hs-comment">------------------</span><span>
-</span><span id="line-13"></span><span class="hs-comment">-- * Exercise 1.1.</span><span>
+</span><span id="line-13"></span><span class="annot"><span class="hs-comment">-- * Exercise 1.1.</span></span><span>
 </span><span id="line-14"></span><span class="hs-comment">------------------</span><span>
-</span><span id="line-15"></span><span class="hs-comment">{- $ex11
+</span><span id="line-15"></span><span class="annot"><span class="hs-comment">{- $ex11
 __Why is @sin 30@ not equal to @0.5@?__
 
 &gt;&gt;&gt; sin 30
@@ -22,32 +22,32 @@ __Why is @sin 30@ not equal to @0.5@?__
 
 &gt;&gt;&gt; sin (30/180 * pi)
 0.49999999999999994
--}</span><span>
+-}</span></span><span>
 </span><span id="line-26"></span><span>
 </span><span id="line-27"></span><span class="hs-comment">------------------</span><span>
-</span><span id="line-28"></span><span class="hs-comment">-- * Exercise 1.2.</span><span>
+</span><span id="line-28"></span><span class="annot"><span class="hs-comment">-- * Exercise 1.2.</span></span><span>
 </span><span id="line-29"></span><span class="hs-comment">------------------</span><span>
-</span><span id="line-30"></span><span class="hs-comment">{- $ex12
+</span><span id="line-30"></span><span class="annot"><span class="hs-comment">{- $ex12
 @
   __(a)__ 2 ^ (3 ^ 4)
   __(b)__ (2 \/ 3) \/ 4
   __(c)__ 7 - (5 \/ 4)
   __(d)__ (log 49) \/ 7
 @
--}</span><span>
+-}</span></span><span>
 </span><span id="line-38"></span><span>
 </span><span id="line-39"></span><span class="hs-comment">------------------</span><span>
-</span><span id="line-40"></span><span class="hs-comment">-- * Exercise 1.3.</span><span>
+</span><span id="line-40"></span><span class="annot"><span class="hs-comment">-- * Exercise 1.3.</span></span><span>
 </span><span id="line-41"></span><span class="hs-comment">------------------</span><span>
-</span><span id="line-42"></span><span class="hs-comment">{- $ex13
+</span><span id="line-42"></span><span class="annot"><span class="hs-comment">{- $ex13
 &gt;&gt;&gt; logBase 2 32
 5.0
--}</span><span>
+-}</span></span><span>
 </span><span id="line-46"></span><span>
 </span><span id="line-47"></span><span class="hs-comment">------------------</span><span>
-</span><span id="line-48"></span><span class="hs-comment">-- * Exercise 1.4.</span><span>
+</span><span id="line-48"></span><span class="annot"><span class="hs-comment">-- * Exercise 1.4.</span></span><span>
 </span><span id="line-49"></span><span class="hs-comment">------------------</span><span>
-</span><span id="line-50"></span><span class="hs-comment">{- $ex14
+</span><span id="line-50"></span><span class="annot"><span class="hs-comment">{- $ex14
 __Calculate the polar coordinates @(r,&#952;)@ for Cartesian coordinates @(x, y) = (&#8211;3,4)@.__
 
 &gt;&gt;&gt; theta = atan2 4 (-3)
@@ -57,28 +57,28 @@ __Calculate the polar coordinates @(r,&#952;)@ for Cartesian coordinates @(x, y)
 &gt;&gt;&gt; r = sqrt (x**2 + y**2)
 &gt;&gt;&gt; (r, &#952;)
 (5.0,2.214297435588181)
--}</span><span>
+-}</span></span><span>
 </span><span id="line-61"></span><span>
 </span><span id="line-62"></span><span class="hs-comment">------------------</span><span>
-</span><span id="line-63"></span><span class="hs-comment">-- * Exercise 1.5.</span><span>
+</span><span id="line-63"></span><span class="annot"><span class="hs-comment">-- * Exercise 1.5.</span></span><span>
 </span><span id="line-64"></span><span class="hs-comment">------------------</span><span>
-</span><span id="line-65"></span><span class="hs-comment">{- $ex15
+</span><span id="line-65"></span><span class="annot"><span class="hs-comment">{- $ex15
 __Find a new example of a non-exact calculation result.__
 
 &gt;&gt;&gt; 3 ** (logBase 3 10)
 10.000000000000002
--}</span><span>
+-}</span></span><span>
 </span><span id="line-71"></span><span>
 </span><span id="line-72"></span><span class="hs-comment">------------------</span><span>
-</span><span id="line-73"></span><span class="hs-comment">-- * Exercise 1.6.</span><span>
+</span><span id="line-73"></span><span class="annot"><span class="hs-comment">-- * Exercise 1.6.</span></span><span>
 </span><span id="line-74"></span><span class="hs-comment">------------------</span><span>
-</span><span id="line-75"></span><span class="hs-comment">{- $ex16
+</span><span id="line-75"></span><span class="annot"><span class="hs-comment">{- $ex16
 __Why does associativity not apply for the equality, inequality, and__
 __comparison operators?__
 
 &gt; 3 &lt; 4 &lt; 5
 
 /Because comparison, equality, and inequality operators evaluate to Boolean values which cannot be further operated on with these same operators./
--}</span><span>
+-}</span></span><span>
 </span><span id="line-83"></span><span>
 </span><span id="line-84"></span></pre></body></html>

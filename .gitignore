@@ -21,3 +21,8 @@ cabal.project.local
 cabal.project.local~
 .HTF/
 .ghc.environment.*
+
+*.yaml.lock
+.stack-work/
+.vscode
+.DS_Store
